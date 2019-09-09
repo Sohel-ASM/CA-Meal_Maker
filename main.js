@@ -38,7 +38,7 @@ const menu = { // menu object with _courses property in it
             name: dishName,
             price: dishPrice
         };
-
+        // push the dish object into the relevant array of the _courses object of the menu
         this._courses[courseName].push(dish);
     },
 };
