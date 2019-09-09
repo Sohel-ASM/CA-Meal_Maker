@@ -73,3 +73,8 @@ menu.addDishToCourse('mains', 'Easy lamb', 10.00);
 menu.addDishToCourse('desserts', 'Banana cake', 2.00);
 menu.addDishToCourse('desserts', 'Zucchini cupcake', 2.00);
 menu.addDishToCourse('desserts', 'Lemon bar', 1.00);
+
+//console.log(menu.courses);
+// generating a random meal and saving it into meal variable.
+let meal = menu.generateRandomMeal();
+console.log(meal);
