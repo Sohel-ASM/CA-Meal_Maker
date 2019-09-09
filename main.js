@@ -61,4 +61,15 @@ const menu = { // menu object with _courses property in it
         return `Your meal is ${appetizer.name}, ${main.name}, and ${dessert.name}. The price is $${totalPrice}.`;
 
     }
-}; // this is the closing bracket for the menu object
+};
+
+// adding menu/item to each courses
+menu.addDishToCourse('appetizers', 'Banana mushroom', 5.00);
+menu.addDishToCourse('appetizers', 'Spinach artichoke', 6.00);
+menu.addDishToCourse('appetizers', 'City ceviche', 4.00);
+menu.addDishToCourse('mains', 'Charred chicken', 7.00);
+menu.addDishToCourse('mains', 'Roast chicken', 7.00);
+menu.addDishToCourse('mains', 'Easy lamb', 10.00);
+menu.addDishToCourse('desserts', 'Banana cake', 2.00);
+menu.addDishToCourse('desserts', 'Zucchini cupcake', 2.00);
+menu.addDishToCourse('desserts', 'Lemon bar', 1.00);
