@@ -31,5 +31,14 @@ const menu = { // menu object with _courses property in it
             desserts: this.desserts
         };
     },
+    // method for adding items with price, in a specified course on the menu
+    addDishToCourse(courseName, dishName, dishPrice) {
 
+        const dish = {
+            name: dishName,
+            price: dishPrice
+        };
+
+        this._courses[courseName].push(dish);
+    },
 };
