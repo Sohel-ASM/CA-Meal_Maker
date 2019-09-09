@@ -43,11 +43,12 @@ const menu = { // menu object with _courses property in it
     },
     // method for randomly getting a dish from a course on the menu
     getRandomDishFromCourse(courseName) {
-
+        // retrive the array of the given course's dishes
         const dishes = this._courses[courseName];
-
+        // getting a random number as index
         const index = Math.floor(Math.random() * dishes.length);
-
+        // getting a dish from a course using the random index number
         return dishes[index];
+
     },
 }; // this is the closing bracket for the menu object
