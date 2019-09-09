@@ -51,4 +51,14 @@ const menu = { // menu object with _courses property in it
         return dishes[index];
 
     },
+    // method for generating a random meal with a item from each course, and the total price of the meal.
+    generateRandomMeal() {
+        const appetizer = this.getRandomDishFromCourse('appetizers');
+        const main = this.getRandomDishFromCourse('mains');
+        const dessert = this.getRandomDishFromCourse('desserts');
+        const totalPrice = appetizer.price + main.price + dessert.price;
+
+        return `Your meal is ${appetizer.name}, ${main.name}, and ${dessert.name}. The price is $${totalPrice}.`;
+
+    }
 }; // this is the closing bracket for the menu object
